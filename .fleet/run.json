@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        
+        {
+            "name": "Build",
+            "type": "jps-build",
+            "workingDir": "D:\\GitHub\\Earth-News",
+            "module": "Earth-News",
+            "includeTests": false
+        },
+        {
+            "name": "EarthNewsApplication",
+            "type": "spring-boot",
+            "workingDir": "D:\\GitHub\\Earth-News",
+            "dependsOn": ["Build"],
+            "mainClass": "com.earth.news.EarthNews.EarthNewsApplication",
+            "module": "Earth-News",
+            "options": ["-XX:TieredStopAtLevel=1", "-Dspring.output.ansi.enabled=always", "-Dcom.sun.management.jmxremote", "-Dspring.jmx.enabled=true", "-Dspring.liveBeansView.mbeanDomain", "-Dspring.application.admin.enabled=true", "-Dmanagement.endpoints.jmx.exposure.include=*", "-Dfile.encoding=UTF-8", "@C:\\Users\\barte\\AppData\\Local\\Temp\\idea_arg_file1511296769"],
+            "activeProfiles": ["dev"]
+        }
+    ]
+}
